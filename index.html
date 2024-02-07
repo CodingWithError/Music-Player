@@ -1,44 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-  <link rel="stylesheet" href="style.css">
-  <title>Music player</title>
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Music Player</title>
+  </head>
+  <body>
+    <h1>Music Player</h1>
 
-  <h1>Music Player</h1>
+    <div class="music-container" id="music-container">
+      <div class="music-info">
+        <h4 id="title"></h4>
+        <div class="progress-container" id="progress-container">
+          <div class="progress" id="progress"></div>
+        </div>
+      </div>
 
-  <div class="music-container">
+      <audio src="music/urugi-urugi.mp3" id="audio"></audio>
 
-    <div class="music-info">
-      <h4 id="title">Ukuele</h4>
-      <div class="progress-container" id="progress-container">
-        <div class="progress" id="progress"></div>
+      <div class="img-container">
+        <img src="images/Urugi-Urugi.jpg" alt="music-cover" id="cover" />
+      </div>
+      <div class="navigation">
+        <button id="prev" class="action-btn">
+          <i class="fas fa-backward"></i>
+        </button>
+        <button id="play" class="action-btn action-btn-big">
+          <i class="fas fa-play"></i>
+        </button>
+        <button id="next" class="action-btn">
+          <i class="fas fa-forward"></i>
+        </button>
       </div>
     </div>
 
-   <audio src="music/urugi-urugi.mp3" id="audio"></audio> <!-- dont forget to add the audio file -->
-
-    <div class="img-container">
-      <img src="image/Urugi-Urugi.jpg" alt="music-cover" id="cover"><!-- dont forget to add the image file -->
-    </div>
-
-    <div class="navigation">
-      <button class="action-btn" id="prev">
-        <i class="fas fa-backward"></i>
-      </button>
-      <button class="action-btn action-btn-big" id="play">
-        <i class="fas fa-play"></i>
-      </button>
-      <button class="action-btn" id="next">
-        <i class="fas fa-forward"></i>
-      </button>
-    </div>
-
-  </div>
-  <script src="app.js"></script>
-</body>
+    <script src="app.js"></script>
+  </body>
 </html>

@@ -15,7 +15,7 @@ const durTime = document.querySelector('#durTime');
 const songs = ['Enna-Solla', 'Nanage-Neenu', 'Neela-Yevaru', 'Raataan-Lambiyan', 'Sada-Nannu', 'Singara-Siriye', 'Tujh-Mein-Rab-Dikhta-Hai', 'urugi-urugi', 'Yamna-Thatilo'];
 
 // Keep track of song
-let songIndex = 2;
+let songIndex = 8;
 
 // Initially load song details into DOM
 loadSong(songs[songIndex]);
